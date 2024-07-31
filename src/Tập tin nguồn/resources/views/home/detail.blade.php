@@ -10,7 +10,7 @@
 @section('js')
     <link rel="stylesheet" href="{{ asset('home/home.js') }}">
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {S
             const sizeSelect = document.querySelector('#size');
             const colorSelect = document.querySelector('#color');
 
@@ -214,11 +214,11 @@
                             role="tab" aria-controls="product-shipping-tab" aria-selected="false">Vận Chuyển & Trả
                             Hàng</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" id="product-review-link" data-toggle="tab" href="#product-review-tab"
                             role="tab" aria-controls="product-review-tab" aria-selected="false">Đánh Giá Sản Phẩm
                             (2)</a>
-                    </li>
+                    </li> --}}
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel"
@@ -231,35 +231,20 @@
                     <div class="tab-pane fade" id="product-info-tab" role="tabpanel"
                         aria-labelledby="product-info-link">
                         <div class="product-desc-content">
-                            <h3>Information</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
-                                mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper
-                                suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam
-                                porttitor mauris sit amet orci. </p>
-
-                            <h3>Fabric & care</h3>
-                            <ul>
-                                <li>Faux suede fabric</li>
-                                <li>Gold tone metal hoop handles.</li>
-                                <li>RI branding</li>
-                                <li>Snake print trim interior </li>
-                                <li>Adjustable cross body strap</li>
-                                <li> Height: 31cm; Width: 32cm; Depth: 12cm; Handle Drop: 61cm</li>
-                            </ul>
-
-                            <h3>Size</h3>
-                            <p>one size</p>
+                            <h3>Kích thước</h3>
+                            {!! $product->content !!}
                         </div><!-- End .product-desc-content -->
                     </div><!-- .End .tab-pane -->
                     <div class="tab-pane fade" id="product-shipping-tab" role="tabpanel"
                         aria-labelledby="product-shipping-link">
                         <div class="product-desc-content">
-                            <h3>Delivery & returns</h3>
-                            <p>We deliver to over 100 countries around the world. For full details of the delivery
-                                options we offer, please view our <a href="#">Delivery information</a><br>
-                                We hope you’ll love every purchase, but if you ever need to return an item you can do so
-                                within a month of receipt. For full details of how to make a return, please view our <a
-                                    href="#">Returns information</a></p>
+                            <h3>Vận chuyển và Trả hàng</h3>
+                            <p> Miễn phí vận chuyển cho tất cả đơn hàng.
+                                Hãy liên hệ cửa hàng để được hỗ trợ đổi, trả hàng
+                            </p>
+                            <p> Địa chỉ:26 Nguyễn Thiện Thành - Khóm 4, Phường 5, Thành phố Trà Vinh, tỉnh Trà Vinh</p>
+                            <p>Điện thoại: 038 253 3858</p>
+                            <p> Gmail:phiphi1101@gmail.com</p>
                         </div><!-- End .product-desc-content -->
                     </div><!-- .End .tab-pane -->
                     <div class="tab-pane fade" id="product-review-tab" role="tabpanel"

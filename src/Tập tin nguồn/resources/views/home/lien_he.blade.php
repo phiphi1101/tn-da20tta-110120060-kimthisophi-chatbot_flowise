@@ -23,7 +23,7 @@
         <div class="page-content pb-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-2 mb-lg-0">
+                    <div class="col-lg-12 mb-2 mb-lg-0 text-center" >
                         <h2 class="title mb-1">Thông tin liên lạc</h2><!-- End .title mb-2 -->
                         <p class="mb-3">Mani's Stylish Fashion. Hãy liên hệ với chúng tôi nếu bạn có
                             thắc mắc, hay vấn đề gì muốn giải quyết. Chúng tôi luôn sẵn sàng giải đáp thắc mắc của bạn. Mani's Stylish Fashion xin cảm ơn!!! </p>
@@ -67,7 +67,7 @@
                             </div><!-- End .col-sm-5 -->
                         </div><!-- End .row -->
                     </div><!-- End .col-lg-6 -->
-                    <div class="col-lg-6">
+                    {{-- <div class="col-lg-6">
                         <h2 class="title mb-1">Bạn có câu hỏi nào không?</h2><!-- End .title mb-2 -->
                         <p class="mb-2">Sử dụng mẫu dưới đây để liên hệ với nhóm nhân viên chăm sóc khách hàng</p>
 
@@ -106,32 +106,28 @@
                             </button>
                         </form><!-- End .contact-form -->
                     </div><!-- End .col-lg-6 -->
-                </div><!-- End .row -->
+                </div><!-- End .row --> --}}
 
                 <hr class="mt-4 mb-5">
 
-                <div class="stores mb-4 mb-lg-5">
+                <div class="col-lg-12 mb-2 mb-lg-0 text-center">
                     <h2 class="title text-center mb-3">Cửa hàng của chúng tôi</h2><!-- End .title text-center mb-2 -->
 
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="store">
                                 <div class="row">
-                                    <div class="col-sm-5 col-xl-6">
-                                        <figure class="store-media mb-2 mb-lg-0">
-                                            <img src="{{ asset('UserLTE/assets/images/stores/img-1.jpg') }}" alt="image">
-                                        </figure><!-- End .store-media -->
-                                    </div><!-- End .col-xl-6 -->
-                                    <div class="col-sm-7 col-xl-6">
+                                    <div class="col-sm-12 col-xl-12" >
                                         <div class="store-content">
-                                            <h3 class="store-title">Nguyễn Thiện Thành - Khóm 4, Phường 5, Thành phố Trà Vinh, tỉnh Trà Vinh/h3><!-- End .store-title -->
+                                            <h3 class="store-title">Nguyễn Thiện Thành - Khóm 4, Phường 5, Thành phố Trà Vinh, tỉnh Trà Vinh</h3><!-- End .store-title -->
                                             <address> Số 126 Nguyễn Thiện Thành - Khóm 4, Phường 5, Thành phố Trà Vinh, tỉnh Trà Vinh</address>
                                             <div><a href="tel:#">+84 382533858</a></div>
                                             <h4 class="store-subtitle">Giờ mở cửa:</h4><!-- End .store-subtitle -->
                                             <div>Thứ Hai - Thứ Bảy: 10 giờ sáng - 7 giờ tối</div>
-                                            <div> Chủ Nhật: 11 giờ sáng - 6 giờ chiều</div>
+                                            <div>Chủ Nhật: 11 giờ sáng - 6 giờ chiều</div>
                                         </div><!-- End .store-content -->
                                     </div><!-- End .col-xl-6 -->
+
                                 </div><!-- End .row -->
                             </div><!-- End .store -->
                         </div><!-- End .col-lg-6 -->
@@ -140,9 +136,9 @@
                             <div class="store">
                                 <div class="row">
                                     <div class="col-sm-5 col-xl-6">
-                                        <figure class="store-media mb-2 mb-lg-0">
+                                        {{-- <figure class="store-media mb-2 mb-lg-0">
                                             <img src="{{ asset('UserLTE/assets/images/stores/img-2.jpg') }}"
-                                                alt="image">
+                                                alt="image"> --}}
                                         </figure><!-- End .store-media -->
                                     </div><!-- End .col-xl-6 -->
 
@@ -164,13 +160,8 @@
                     </div><!-- End .row -->
                 </div><!-- End .stores -->
             </div><!-- End .container -->
-            <div id="map"> <gmp-map center="9.923409461975098,106.34651947021484" zoom="14"
-                    map-id="DEMO_MAP_ID">
-                    <gmp-advanced-marker position="9.923409461975098,106.34651947021484" title="My location">
-                    </gmp-advanced-marker>
-                </gmp-map></div><!-- End #map -->
-        </div><!-- End .page-content -->
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62882.018189011214!2d106.34651932657879!3d9.923451593532501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0175ea296facb%3A0x55ded92e29068221!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBUcsOgIFZpbmg!5e0!3m2!1svi!2s!4v1721113219627!5m2!1svi!2s" width="1600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!-- End .page-content -->
     </main><!-- End .main -->
 @endsection
-
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCotX1GvSphz7kZn9vy1EAI49bckvE69JU&callback=console.debug&libraries=maps,marker&v=beta"></script>

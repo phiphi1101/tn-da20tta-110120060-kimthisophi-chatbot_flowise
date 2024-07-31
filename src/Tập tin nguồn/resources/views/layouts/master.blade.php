@@ -4,7 +4,7 @@
             import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
             Chatbot.init({
                 chatflowid: "2732fe41-3e2b-4268-8b12-877f56482e87",
-                apiHost: "http://localhost:3000",
+                apiHost: "http://localhost:8080",
                 theme: {
                 button: {
                     backgroundColor: "#3B81F6",
@@ -53,6 +53,7 @@
             }
             })
         </script>
+
     </body>
 <head>
     <meta charset="UTF-8">
